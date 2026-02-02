@@ -225,7 +225,7 @@ function parseMarkdown(content) {
 }
 
 // Generate HTML from template
-function generateHTML(data, language, date) {
+function generateHTML(data, language, date, allDates) {
   const template = fs.readFileSync('template.html', 'utf8');
   const $ = cheerio.load(template);
 
@@ -234,6 +234,32 @@ function generateHTML(data, language, date) {
 
   // Remove footer
   $('footer').remove();
+
+  // Add language toggle and navigation bar
+  const otherLanguage = language === 'chinese' ? 'english' : 'chinese';
+  const otherLanguageLabel = language === 'chinese' ? 'English' : '中文';
+
+  // Find previous and next dates
+  const currentIndex = allDates.indexOf(date);
+  const prevDate = currentIndex < allDates.length - 1 ? allDates[currentIndex + 1] : null;
+  const nextDate = currentIndex > 0 ? allDates[currentIndex - 1] : null;
+
+  const navBar = `
+    <div style="position: sticky; top: 0; z-index: 1000; background: rgba(240, 242, 245, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); padding: 1rem 2rem;">
+      <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; gap: 1rem;">
+          ${prevDate ? `<a href="../${prevDate}/${language}.html" style="padding: 0.5rem 1rem; background: #F0F2F5; border-radius: 0.5rem; box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff; color: #4A3728; text-decoration: none; font-weight: 600; font-size: 0.875rem;">← ${language === 'chinese' ? '上期' : 'Previous'}</a>` : ''}
+          ${nextDate ? `<a href="../${nextDate}/${language}.html" style="padding: 0.5rem 1rem; background: #F0F2F5; border-radius: 0.5rem; box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff; color: #4A3728; text-decoration: none; font-weight: 600; font-size: 0.875rem;">${language === 'chinese' ? '下期' : 'Next'} →</a>` : ''}
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <a href="../archive.html" style="color: #666; text-decoration: none; font-size: 0.875rem; font-weight: 600;">${language === 'chinese' ? '归档' : 'Archive'}</a>
+          <a href="${otherLanguage}.html" style="padding: 0.5rem 1.5rem; background: #ec6d13; border-radius: 0.5rem; color: white; text-decoration: none; font-weight: 700; font-size: 0.875rem; box-shadow: 4px 4px 8px rgba(236, 109, 19, 0.3);">${otherLanguageLabel}</a>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $('body > div').prepend(navBar);
 
   // Update title
   $('title').text(data.title || 'Weekly Coffee Report');
@@ -424,13 +450,29 @@ function convertMarkdownToHTML(mdPath) {
   const dateMatch = mdPath.match(/posts\/(\d{4}-\d{2}-\d{2})/);
   const date = dateMatch ? dateMatch[1] : new Date().toISOString().split('T')[0];
 
+  const allDates = getAllDates();
   const data = parseMarkdown(content);
-  const html = generateHTML(data, language, date);
+  const html = generateHTML(data, language, date, allDates);
 
   const htmlPath = mdPath.replace('.md', '.html');
   fs.writeFileSync(htmlPath, html);
 
   console.log(`Generated: ${htmlPath}`);
+}
+
+// Get all available dates
+function getAllDates() {
+  const postsDir = 'posts';
+  if (!fs.existsSync(postsDir)) return [];
+
+  const items = fs.readdirSync(postsDir, { withFileTypes: true });
+  const dates = items
+    .filter(item => item.isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(item.name))
+    .map(item => item.name)
+    .sort()
+    .reverse(); // Most recent first
+
+  return dates;
 }
 
 // Run conversion
@@ -449,11 +491,32 @@ if (require.main === module) {
     process.exit(0);
   }
 
+  const allDates = getAllDates();
+
   markdownFiles.forEach(file => {
     convertMarkdownToHTML(file);
   });
 
   console.log(`\nConverted ${markdownFiles.length} files successfully!`);
+
+  // Create index.html that redirects to latest English report
+  if (allDates.length > 0) {
+    const latestDate = allDates[0];
+    const indexContent = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=posts/${latestDate}/english.html">
+  <title>Redirecting to Latest Report...</title>
+</head>
+<body>
+  <p>Redirecting to latest report... <a href="posts/${latestDate}/english.html">Click here if not redirected</a></p>
+</body>
+</html>`;
+
+    fs.writeFileSync('index.html', indexContent);
+    console.log(`Created index.html → redirects to posts/${latestDate}/english.html`);
+  }
 }
 
 module.exports = { parseMarkdown, generateHTML };
