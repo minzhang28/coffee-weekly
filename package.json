@@ -1,0 +1,17 @@
+{
+  "name": "coffee-weekly-converter",
+  "version": "1.0.0",
+  "description": "Converts coffee weekly markdown reports to HTML",
+  "main": "convert.js",
+  "scripts": {
+    "convert": "node convert.js",
+    "test": "node convert.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.0",
+    "marked": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
