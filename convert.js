@@ -517,6 +517,125 @@ if (require.main === module) {
     fs.writeFileSync('index.html', indexContent);
     console.log(`Created index.html → redirects to posts/${latestDate}/english.html`);
   }
+
+  // Create archive.html listing all reports
+  if (allDates.length > 0) {
+    const archiveContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Archive | Vancouver Coffee Weekly</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --primary: #4A3728;
+  --accent: #ec6d13;
+  --soft-bg: #F0F2F5;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: radial-gradient(circle at top left, #F8FAFC 0%, #F0F2F5 100%);
+  min-height: 100vh;
+  color: #2D3436;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.report-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.report-item {
+  background: #F0F2F5;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+.report-item:hover {
+  transform: translateX(5px);
+}
+.report-date {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.report-links {
+  display: flex;
+  gap: 1rem;
+}
+.report-link {
+  padding: 0.5rem 1.5rem;
+  background: #F0F2F5;
+  border-radius: 0.75rem;
+  box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+.report-link:hover {
+  color: white;
+  background: var(--accent);
+}
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #666;
+  text-decoration: none;
+  font-weight: 600;
+}
+.back-link:hover {
+  color: var(--accent);
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="/" class="back-link">← Back to Latest</a>
+  <h1>Report Archive</h1>
+  <div class="report-list">
+${allDates.map(date => {
+  const [year, month, day] = date.split('-');
+  const dateObj = new Date(year, month - 1, day);
+  const formattedDate = dateObj.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+  return `    <div class="report-item">
+      <div class="report-date">${formattedDate}</div>
+      <div class="report-links">
+        <a href="posts/${date}/chinese.html" class="report-link">中文</a>
+        <a href="posts/${date}/english.html" class="report-link">English</a>
+      </div>
+    </div>`;
+}).join('\n')}
+  </div>
+</div>
+</body>
+</html>`;
+
+    fs.writeFileSync('archive.html', archiveContent);
+    console.log(`Created archive.html with ${allDates.length} reports`);
+  }
 }
 
 module.exports = { parseMarkdown, generateHTML };
