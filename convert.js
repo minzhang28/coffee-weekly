@@ -116,6 +116,7 @@ function parseMarkdown(content) {
       currentPick = {
         name: pickMatch[2],
         url: pickMatch[3],
+        imageUrl: '',  // Will be extracted from next line if present
         roaster: '',
         origin: '',
         variety: '',
@@ -131,6 +132,17 @@ function parseMarkdown(content) {
         brewGrind: ''
       };
       currentSection = null;
+
+      // Check next line for image URL
+      if (i + 1 < lines.length) {
+        const nextLine = lines[i + 1].trim();
+        const imageMatch = nextLine.match(/^!\[.*?\]\((.+?)\)/);
+        if (imageMatch) {
+          currentPick.imageUrl = imageMatch[1];
+          i++; // Skip the image line
+        }
+      }
+
       continue;
     }
 
@@ -252,7 +264,7 @@ function generateHTML(data, language, date, allDates) {
           ${nextDate ? `<a href="../${nextDate}/${language}.html" style="padding: 0.5rem 1rem; background: #F0F2F5; border-radius: 0.5rem; box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff; color: #4A3728; text-decoration: none; font-weight: 600; font-size: 0.875rem;">${language === 'chinese' ? '下期' : 'Next'} →</a>` : ''}
         </div>
         <div style="display: flex; gap: 1rem; align-items: center;">
-          <a href="../archive.html" style="color: #666; text-decoration: none; font-size: 0.875rem; font-weight: 600;">${language === 'chinese' ? '归档' : 'Archive'}</a>
+          <a href="../../archive.html" style="color: #666; text-decoration: none; font-size: 0.875rem; font-weight: 600;">${language === 'chinese' ? '归档' : 'Archive'}</a>
           <a href="${otherLanguage}.html" style="padding: 0.5rem 1.5rem; background: #ec6d13; border-radius: 0.5rem; color: white; text-decoration: none; font-weight: 700; font-size: 0.875rem; box-shadow: 4px 4px 8px rgba(236, 109, 19, 0.3);">${otherLanguageLabel}</a>
         </div>
       </div>
@@ -271,6 +283,21 @@ function generateHTML(data, language, date, allDates) {
   // Update theme
   $('h1').next('p').text(data.theme || '');
 
+  // Add selection story/context
+  const selectionStory = language === 'chinese'
+    ? '每一周我们都会从温哥华各大烘焙商处收集新鲜咖啡豆数据，根据烘焙方式，烘焙时间，产区，豆种以及处理方式和季节，帮你精选出最值得入手的手冲和意式个两款精品咖啡豆，希望能帮助你选择你喜欢的口味。'
+    : 'Every week, we gather fresh coffee data from roasters across Vancouver. Based on roast style and date, origin, varietal, processing method, and seasonality, we select four standout specialty coffees—two for pour-over and two for espresso. The goal is simple: to help you find flavors you’ll genuinely enjoy.';
+
+  const storyHtml = `
+    <div style="max-width: 800px; margin: 2rem auto; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 92, 71, 0.05), rgba(139, 92, 71, 0.1)); border-radius: 1rem; border-left: 4px solid #8b5c47;">
+      <p style="margin: 0; color: #4a5568; line-height: 1.8; font-size: 0.95rem;">
+        ${selectionStory}
+      </p>
+    </div>
+  `;
+
+  $('h1').next('p').after(storyHtml);
+
   // Clear existing cards in Pour Over section (section index 1)
   $('section').eq(1).find('.grid.grid-cols-1.xl\\:grid-cols-2.gap-12').empty();
 
@@ -287,7 +314,7 @@ function generateHTML(data, language, date, allDates) {
       <div class="soft-ui-raised p-8 flex flex-col lg:flex-row gap-8 transition-all duration-500 hover:shadow-2xl">
         <div class="lg:w-1/3 flex flex-col gap-4">
           <div class="relative overflow-hidden rounded-3xl aspect-[4/5] soft-ui-inset">
-            <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB"/>
+            <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="${pick.imageUrl || 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB'}"/>
           </div>
           <div class="inner-card-section p-5 rounded-2xl">
             <h4 class="text-[10px] font-black uppercase tracking-widest text-accent mb-4">${language === 'chinese' ? '咖啡信息' : 'COFFEE PROFILE'}</h4>
@@ -356,7 +383,7 @@ function generateHTML(data, language, date, allDates) {
       <div class="soft-ui-raised p-8 flex flex-col lg:flex-row gap-8 transition-all duration-500 hover:shadow-2xl">
         <div class="lg:w-1/3 flex flex-col gap-4">
           <div class="relative overflow-hidden rounded-3xl aspect-[4/5] soft-ui-inset">
-            <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB"/>
+            <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="${pick.imageUrl || 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB'}"/>
           </div>
           <div class="inner-card-section p-5 rounded-2xl">
             <h4 class="text-[10px] font-black uppercase tracking-widest text-accent mb-4">${language === 'chinese' ? '咖啡信息' : 'COFFEE PROFILE'}</h4>
