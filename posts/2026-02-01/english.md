@@ -1,16 +1,16 @@
 # This Week's Coffee Picks
 
-This week's theme is Classic vs. Modern. On one side, a balanced, nutty washed blend from Matchstick that's consistent and forgiving. On the other, a sweet, funky Black Honey process from Rogue Wave. Both are omni-roasted, perfect for filter or espresso depending on your preference.
+This week's theme is 'Classic vs. Complex'. We're featuring a reliable daily drinker against a nuanced single origin for pour over, and a solid workhorse espresso against a fantastic decaf. Something for every palate, whether you're just starting out or chasing unique flavor profiles.
 
 ---
 
 ## Pour Over Recommendations
 
-### Pick 1: [Catalogue](https://matchstickyvr.com/products/catalogue-50)
+### Pick 1: [Bulldog](https://matchstickyvr.com/products/bulldog-37)
 
 #### Coffee Profile
 - Roaster: Matchstick
-- Origin: Guatemala, Colombia, Nicaragua 
+- Origin: Colombia
 - Variety: Blend
 - Process: Washed
 - Roast: Medium
@@ -19,58 +19,58 @@ This week's theme is Classic vs. Modern. On one side, a balanced, nutty washed b
 
 #### Why Get This
 ① [Seasonality/Status]
-- Beans from these Central and South American origins are at their peak season right now, ensuring fresh, classic flavors.
+- Peak season. Colombia is at peak harvest, so these beans are fresh and tasting their best right now.
 
 ② [Rarity/Value]
-- An excellent value blend. It's forgiving to brew and consistent, making it a perfect daily drinker.
+- High value. A very consistent and approachable coffee at a great price point, perfect for a daily driver.
 
 #### Flavor Profile
-**Variety Character**: A classic washed blend profile: clean, balanced, and nutty.
+**Variety Character**: Classic Colombian profile: balanced, clean, and sweet.
 
-**Tastes Like**: Toasted walnuts, melted marshmallow, a hint of red fruit.
+**Tastes Like**: Cocoa Nibs, Smoke, Demerara Sugar.
 
 #### Brew Guide (V60/Pour Over)
 - Ratio: 1:16
-- Temp: 94°C (medium roast doesn't need high heat)
+- Temp: 93°C (medium roast, no need for super high temp to get sweetness)
 - Grind: Medium-coarse
 
-### Pick 2: [Costa Rica - Ivan Solis - Cuatro Vientos | Black Honey](https://roguewavecoffee.ca/products/costa-rica-ivan-solis-cuatro-vientos-black-honey)
+### Pick 2: [GUATEMALA | Familia Zelaya - Villa Sarchi](https://nemesis.coffee/products/guatemala-familia-zelaya-villa-sarchi)
 
 #### Coffee Profile
-- Roaster: Rogue Wave
-- Origin: Costa Rica Santos
-- Variety: Mixed
-- Process: Black Honey
-- Roast: Light/Medium
+- Roaster: Nemesis
+- Origin: Guatemala Antigua
+- Variety: Villa Sarchi
+- Process: washed
+- Roast: Light
 - Roast Date: Recent
 - Price: $24
 
 #### Why Get This
 ① [Seasonality/Status]
-- This is a late harvest lot, which often results in deeper sweetness as the coffee cherries matured longer on the plant.
+- End of season. This is the tail end of this year's crop. Miss it and you're waiting for next year's harvest.
 
 ② [Rarity/Value]
-- A great way to experience a Black Honey process without a massive price tag. High complexity for the cost.
+- Single varietal focus. Villa Sarchi is a Bourbon mutation with a complex profile worth exploring.
 
 #### Flavor Profile
-**Variety Character**: The Black Honey process gives it a syrupy body and wine-like fruit notes.
+**Variety Character**: As a Bourbon mutation, expect bright acidity and a smooth body.
 
-**Tastes Like**: Plum jam, red grapes, dark honey.
+**Tastes Like**: blackberry, dried apple, praline.
 
 #### Brew Guide (V60/Pour Over)
 - Ratio: 1:16.5
-- Temp: 96°C (light/medium roast needs high temp to open up)
-- Grind: Medium
+- Temp: 96°C (light roast, high-altitude bean; needs high temp to extract acidity and sweetness)
+- Grind: Medium-fine
 
 ---
 
 ## Espresso Recommendations
 
-### Pick 1: [Catalogue](https://matchstickyvr.com/products/catalogue-50)
+### Pick 1: [Bulldog](https://matchstickyvr.com/products/bulldog-37)
 
 #### Coffee Profile
 - Roaster: Matchstick
-- Origin: Guatemala, Colombia, Nicaragua 
+- Origin: Colombia
 - Variety: Blend
 - Process: Washed
 - Roast: Medium
@@ -79,53 +79,53 @@ This week's theme is Classic vs. Modern. On one side, a balanced, nutty washed b
 
 #### Why Get This
 ① [Seasonality/Status]
-- A peak-season blend that provides a fresh and vibrant base for espresso.
+- Very consistent. Being peak season, this bean is easy to dial in and forgiving for espresso.
 
 ② [Rarity/Value]
-- A workhorse espresso. Cuts through milk perfectly and is incredibly consistent shot to shot.
+- Excellent milk coffee base. Great value for a bean that punches through milk with classic chocolatey notes.
 
 #### Flavor Profile
-**Variety Character**: A traditional espresso profile: low acidity, heavy body, and chocolate-forward.
+**Variety Character**: Classic Colombian profile: balanced, clean, and sweet.
 
-**Tastes Like**: Dark chocolate, roasted nuts, a hint of baked apple.
+**Tastes Like**: Cocoa Nibs, Smoke, Demerara Sugar.
 
 #### Brew Guide (Espresso Machine)
 - Dose: 18g
-- Ratio: 1:2 (36g out)
-- Temp: 93°C (classic temp for a balanced medium roast)
-- Grind: Fine
+- Ratio: 1:2
+- Temp: 92°C (medium roast, avoids bitterness)
+- Grind: Standard espresso fine
 
-### Pick 2: [Costa Rica - Ivan Solis - Cuatro Vientos | Black Honey](https://roguewavecoffee.ca/products/costa-rica-ivan-solis-cuatro-vientos-black-honey)
+### Pick 2: [DECAF | GUATEMALA – Ricardo Zelaya – Finca Carrizal](https://nemesis.coffee/products/decaf-guatemala-ricardo-zelaya-finca-carrizal)
 
 #### Coffee Profile
-- Roaster: Rogue Wave
-- Origin: Costa Rica Santos
-- Variety: Mixed
-- Process: Black Honey
-- Roast: Light/Medium
+- Roaster: Nemesis
+- Origin: Guatemala Antigua
+- Variety: mixed lot
+- Process: washed
+- Roast: Medium
 - Roast Date: Recent
-- Price: $24
+- Price: $22
 
 #### Why Get This
 ① [Seasonality/Status]
-- The late harvest sweetness translates into a syrupy, fruit-forward espresso shot.
+- No compromise on flavor. A peak season Guatemalan that holds up remarkably well to the decaffeination process.
 
 ② [Rarity/Value]
-- An accessible entry into modern, single-origin espresso. Best enjoyed as a straight shot.
+- High-quality decaf. The perfect choice for an evening espresso that tastes great without keeping you up.
 
 #### Flavor Profile
-**Variety Character**: A juicy, high-acidity espresso with a funky sweetness from the honey process.
+**Variety Character**: Typical Antigua profile with a full body and chocolatey, nutty notes.
 
-**Tastes Like**: Stewed strawberries, balsamic glaze, candied orange peel.
+**Tastes Like**: orange, milk chocolate, cashew.
 
 #### Brew Guide (Espresso Machine)
 - Dose: 18g
-- Ratio: 1:2.5 (a longer ratio helps balance the acidity)
-- Temp: 94°C (higher temp needed for the lighter roast)
-- Grind: Slightly coarser than standard to manage the higher yield.
+- Ratio: 1:2.2
+- Temp: 93°C (decaf beans can be less dense, a slightly higher temp helps extraction)
+- Grind: A touch finer than your standard espresso setting.
 
 ---
 
 ## How to Choose
 
-If you want a dependable, comforting cup that tastes like classic coffee, grab the Matchstick Catalogue. For those chasing complex, fruity notes in their pour over, the Rogue Wave Costa Rica is the one. On espresso, the Catalogue is your go-to for rich, chocolatey lattes, while the Costa Rica pulls a wild, juicy shot that's best enjoyed on its own.
+For a consistent, easy-brewing daily pour over, Matchstick's Bulldog is a sure thing. If you want to explore bright acidity and complexity, grab the Villa Sarchi from Nemesis. On espresso, Bulldog is the perfect workhorse for milk drinks with its deep chocolate notes. The Nemesis Decaf is for anyone wanting a proper, flavorful coffee late in the day without the caffeine.
