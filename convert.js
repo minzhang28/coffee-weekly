@@ -4,76 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const { marked } = require('marked');
 const cheerio = require('cheerio');
-const https = require('https');
-
-// Fetch image URL from product URL
-async function fetchImageFromProductUrl(productUrl) {
-  return new Promise((resolve) => {
-    try {
-      // Extract domain and handle from URL
-      const match = productUrl.match(/https?:\/\/([^\/]+)\/products\/([^\/\?]+)/);
-      if (!match) {
-        console.log(`⚠️  Could not parse URL: ${productUrl}`);
-        resolve('');
-        return;
-      }
-
-      const domain = match[1];
-      const handle = match[2];
-
-      // Check if it's Squarespace (Prototype)
-      if (domain.includes('prototypecoffee.com')) {
-        // Fetch Squarespace shop JSON
-        const url = `https://${domain}/shop?format=json`;
-        https.get(url, (res) => {
-          let data = '';
-          res.on('data', (chunk) => { data += chunk; });
-          res.on('end', () => {
-            try {
-              const json = JSON.parse(data);
-              const product = json.items.find(p => p.urlId && productUrl.includes(p.urlId));
-              const imageUrl = product && product.assetUrl ? product.assetUrl : '';
-              console.log(`🖼️  ${domain}/${handle}: ${imageUrl ? '✅ Found' : '❌ Not found'}`);
-              resolve(imageUrl);
-            } catch (e) {
-              console.log(`⚠️  Parse error for ${domain}: ${e.message}`);
-              resolve('');
-            }
-          });
-        }).on('error', (e) => {
-          console.log(`⚠️  Fetch error for ${domain}: ${e.message}`);
-          resolve('');
-        });
-      } else {
-        // Fetch Shopify product JSON
-        const url = `https://${domain}/products/${handle}.json`;
-        https.get(url, (res) => {
-          let data = '';
-          res.on('data', (chunk) => { data += chunk; });
-          res.on('end', () => {
-            try {
-              const json = JSON.parse(data);
-              const imageUrl = json.product && json.product.images && json.product.images[0]
-                ? json.product.images[0].src
-                : '';
-              console.log(`🖼️  ${domain}/${handle}: ${imageUrl ? '✅ Found' : '❌ Not found'}`);
-              resolve(imageUrl);
-            } catch (e) {
-              console.log(`⚠️  Parse error for ${domain}: ${e.message}`);
-              resolve('');
-            }
-          });
-        }).on('error', (e) => {
-          console.log(`⚠️  Fetch error for ${domain}: ${e.message}`);
-          resolve('');
-        });
-      }
-    } catch (e) {
-      console.log(`⚠️  Error processing ${productUrl}: ${e.message}`);
-      resolve('');
-    }
-  });
-}
 
 // Find all markdown files in posts directory
 function findMarkdownFiles(dir) {
@@ -186,7 +116,6 @@ function parseMarkdown(content) {
       currentPick = {
         name: pickMatch[2],
         url: pickMatch[3],
-        imageUrl: '',  // Will be fetched from product URL later
         roaster: '',
         origin: '',
         variety: '',
@@ -323,7 +252,7 @@ function generateHTML(data, language, date, allDates) {
           ${nextDate ? `<a href="../${nextDate}/${language}.html" style="padding: 0.5rem 1rem; background: #F0F2F5; border-radius: 0.5rem; box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff; color: #4A3728; text-decoration: none; font-weight: 600; font-size: 0.875rem;">${language === 'chinese' ? '下期' : 'Next'} →</a>` : ''}
         </div>
         <div style="display: flex; gap: 1rem; align-items: center;">
-          <a href="../../archive.html" style="color: #666; text-decoration: none; font-size: 0.875rem; font-weight: 600;">${language === 'chinese' ? '归档' : 'Archive'}</a>
+          <a href="../archive.html" style="color: #666; text-decoration: none; font-size: 0.875rem; font-weight: 600;">${language === 'chinese' ? '归档' : 'Archive'}</a>
           <a href="${otherLanguage}.html" style="padding: 0.5rem 1.5rem; background: #ec6d13; border-radius: 0.5rem; color: white; text-decoration: none; font-weight: 700; font-size: 0.875rem; box-shadow: 4px 4px 8px rgba(236, 109, 19, 0.3);">${otherLanguageLabel}</a>
         </div>
       </div>
@@ -358,7 +287,7 @@ function generateHTML(data, language, date, allDates) {
       <div class="soft-ui-raised p-8 flex flex-col lg:flex-row gap-8 transition-all duration-500 hover:shadow-2xl">
         <div class="lg:w-1/3 flex flex-col gap-4">
           <div class="relative overflow-hidden rounded-3xl aspect-[4/5] soft-ui-inset">
-            <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="${pick.imageUrl || 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB'}"/>
+            <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB"/>
           </div>
           <div class="inner-card-section p-5 rounded-2xl">
             <h4 class="text-[10px] font-black uppercase tracking-widest text-accent mb-4">${language === 'chinese' ? '咖啡信息' : 'COFFEE PROFILE'}</h4>
@@ -427,7 +356,7 @@ function generateHTML(data, language, date, allDates) {
       <div class="soft-ui-raised p-8 flex flex-col lg:flex-row gap-8 transition-all duration-500 hover:shadow-2xl">
         <div class="lg:w-1/3 flex flex-col gap-4">
           <div class="relative overflow-hidden rounded-3xl aspect-[4/5] soft-ui-inset">
-            <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="${pick.imageUrl || 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB'}"/>
+            <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB"/>
           </div>
           <div class="inner-card-section p-5 rounded-2xl">
             <h4 class="text-[10px] font-black uppercase tracking-widest text-accent mb-4">${language === 'chinese' ? '咖啡信息' : 'COFFEE PROFILE'}</h4>
@@ -511,7 +440,7 @@ function generateHTML(data, language, date, allDates) {
 }
 
 // Main conversion function
-async function convertMarkdownToHTML(mdPath) {
+function convertMarkdownToHTML(mdPath) {
   console.log(`Converting: ${mdPath}`);
 
   const content = fs.readFileSync(mdPath, 'utf8');
@@ -523,19 +452,6 @@ async function convertMarkdownToHTML(mdPath) {
 
   const allDates = getAllDates();
   const data = parseMarkdown(content);
-
-  // Fetch images for all picks
-  console.log('\n🖼️  Fetching images from product URLs...');
-  const allPicks = [...data.pourOverPicks, ...data.espressoPicks];
-  await Promise.all(
-    allPicks.map(async (pick) => {
-      if (pick.url) {
-        pick.imageUrl = await fetchImageFromProductUrl(pick.url);
-      }
-    })
-  );
-  console.log('');
-
   const html = generateHTML(data, language, date, allDates);
 
   const htmlPath = mdPath.replace('.md', '.html');
@@ -561,29 +477,27 @@ function getAllDates() {
 
 // Run conversion
 if (require.main === module) {
-  (async () => {
-    const postsDir = 'posts';
+  const postsDir = 'posts';
 
-    if (!fs.existsSync(postsDir)) {
-      console.log('No posts directory found');
-      process.exit(0);
-    }
+  if (!fs.existsSync(postsDir)) {
+    console.log('No posts directory found');
+    process.exit(0);
+  }
 
-    const markdownFiles = findMarkdownFiles(postsDir);
+  const markdownFiles = findMarkdownFiles(postsDir);
 
-    if (markdownFiles.length === 0) {
-      console.log('No markdown files found');
-      process.exit(0);
-    }
+  if (markdownFiles.length === 0) {
+    console.log('No markdown files found');
+    process.exit(0);
+  }
 
-    const allDates = getAllDates();
+  const allDates = getAllDates();
 
-    // Convert files sequentially to avoid overwhelming the APIs
-    for (const file of markdownFiles) {
-      await convertMarkdownToHTML(file);
-    }
+  markdownFiles.forEach(file => {
+    convertMarkdownToHTML(file);
+  });
 
-    console.log(`\nConverted ${markdownFiles.length} files successfully!`);
+  console.log(`\nConverted ${markdownFiles.length} files successfully!`);
 
   // Create index.html that redirects to latest English report
   if (allDates.length > 0) {
@@ -722,7 +636,6 @@ ${allDates.map(date => {
     fs.writeFileSync('archive.html', archiveContent);
     console.log(`Created archive.html with ${allDates.length} reports`);
   }
-  })();
 }
 
 module.exports = { parseMarkdown, generateHTML };
