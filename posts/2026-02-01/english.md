@@ -1,131 +1,131 @@
 # This Week's Coffee Picks
 
-This week's theme is 'Peak Season'. We're featuring two distinct pour overs—a classic and a bright—and two exceptional espressos. One from South America and one from Africa. Here's what's tasting great right now, fresh off the harvest.
+This week’s theme is contrast. For the adventurous palate, a rare and bright Colombian Geisha. For those seeking comfort and consistency, a classic chocolate-and-nut profile. We have picks for both pour over and espresso.
 
 ---
 
 ## Pour Over Recommendations
 
-### Pick 1: [Ethiopia - Chelbesa One Station | Washed](https://roguewavecoffee.ca/products/ethiopia-chelbesa-one-station-washed)
+### Pick 1: [Colombia - Las Margaritas Geisha | Washed 100g](https://roguewavecoffee.ca/products/colombia-las-margaritas-geisha-washed-100g-1)
 
 #### Coffee Profile
 - Roaster: Rogue Wave
-- Origin: Ethiopia Gedeb Zone, Yirgacheffe
-- Variety: Ethiopian Heirloom (Korume, Wolisho)
-- Process: Washed (with a 2-3 day dry ferment)
+- Origin: Colombia
+- Variety: Geisha, Caturra, etc.
+- Process: Washed, Aerobic Fermentation
 - Roast: Light/Medium
 - Roast Date: Recent
-- Price: $26
+- Price: $28/100g
 
 #### Why Get This
 ① [Seasonality/Status]
-- Prime Ethiopian harvest season. This is a fresh arrival, so the flavors are vibrant.
+- Peak seasonality for high-quality Colombian lots.
 
 ② [Rarity/Value]
-- Coffees from the Chelbesa station are consistently high quality. This washed lot is super clean and bright, offering great value.
+- Geisha is a premium, low-yield variety known for its complexity.
 
 #### Flavor Profile
-**Variety Character**: Classic washed Yirgacheffe profile known for clean florals and citrus acidity.
+**Variety Character**: Classic Geisha profile: exceptionally clean, elegant, and floral.
 
-**Tastes Like**: Lemon, jasmine, black tea, raspberry.
+**Tastes Like**: Jasmine, white peach, lemon tea.
 
 #### Brew Guide (V60/Pour Over)
 - Ratio: 1:16
-- Temp: 95°C (Light roast, needs the extra heat to properly extract the delicate floral and fruit notes.)
-- Grind: Medium-fine (like table salt)
+- Temp: 96°C (high-density bean needs high temp to extract)
+- Grind: Medium-fine
 
-### Pick 2: [Ex Animo Hooked Blend](https://revolvercoffee.ca/products/ex-animo-hooked-espresso)
+### Pick 2: [Ethica Standard Espresso *Natural Espresso*](https://revolvercoffee.ca/products/ethica-standard-espresso-natural-espresso)
 
 #### Coffee Profile
 - Roaster: Revolver
-- Origin: South America/East Africa
-- Variety: Blend
-- Process: Blend
+- Origin: Brazil Cerrado
+- Variety: Red Catuai
+- Process: Natural
 - Roast: Medium
 - Roast Date: Recent
-- Price: $23.50 (340g)
+- Price: $21/250g
 
 #### Why Get This
 ① [Seasonality/Status]
-- South American components are at peak freshness for the season.
+- A stable, in-season coffee from Brazil.
 
 ② [Rarity/Value]
-- A 340g bag makes this a solid choice for a daily driver. Consistent and classic profile.
+- Excellent value for a consistent daily-drinking coffee.
 
 #### Flavor Profile
-**Variety Character**: A balanced and sweet blend, quintessential comfort coffee.
+**Variety Character**: A classic Brazilian natural: low acidity, high sweetness and body.
 
-**Tastes Like**: Dark chocolate, caramel, vanilla.
+**Tastes Like**: Milk chocolate, roasted almond, caramel.
 
 #### Brew Guide (V60/Pour Over)
-- Ratio: 1:15
-- Temp: 92°C (Medium roast; lower temp avoids bitterness and brings out sweetness.)
+- Ratio: 1:16
+- Temp: 93°C (more soluble bean; lower temp avoids bitterness)
 - Grind: Medium
 
 ---
 
 ## Espresso Recommendations
 
-### Pick 1: [Luna Colombia Antonio Gualguan Washed Espresso](https://revolvercoffee.ca/products/luna-colombia-antonio-gualguan-washed-espresso)
-
-#### Coffee Profile
-- Roaster: Revolver
-- Origin: Colombia Nariño
-- Variety: Caturra
-- Process: Washed
-- Roast: Medium
-- Roast Date: Recent
-- Price: $28.50 (250g)
-
-#### Why Get This
-① [Seasonality/Status]
-- Freshly landed lot from the recent Colombian harvest.
-
-② [Rarity/Value]
-- Excellent single origin espresso that showcases the Nariño terroir.
-
-#### Flavor Profile
-**Variety Character**: High-altitude Caturra delivers bright acidity and a sweet body.
-
-**Tastes Like**: Satsuma orange, yellow plum, brown butter, chocolate.
-
-#### Brew Guide (Espresso Machine)
-- Dose: 18g
-- Ratio: 1:2.2 (for a ~40g yield)
-- Temp: 93°C (Standard temp for a medium roast.)
-- Grind: Standard fine espresso grind
-
-### Pick 2: [Ethiopia - Chelbesa One Station | Washed](https://roguewavecoffee.ca/products/ethiopia-chelbesa-one-station-washed)
+### Pick 1: [Colombia - Las Margaritas Geisha | Washed 100g](https://roguewavecoffee.ca/products/colombia-las-margaritas-geisha-washed-100g-1)
 
 #### Coffee Profile
 - Roaster: Rogue Wave
-- Origin: Ethiopia Gedeb Zone, Yirgacheffe
-- Variety: Ethiopian Heirloom (Korume, Wolisho)
-- Process: Washed
+- Origin: Colombia
+- Variety: Geisha, Caturra, etc.
+- Process: Washed, Aerobic Fermentation
 - Roast: Light/Medium
 - Roast Date: Recent
-- Price: $26
+- Price: $28/100g
 
 #### Why Get This
 ① [Seasonality/Status]
-- Peak season lot, super fresh.
+- An opportunity to taste a top-tier coffee as a single origin espresso (SOE).
 
 ② [Rarity/Value]
-- Pulls as a bright, modern SOE. A great way to experience a non-traditional espresso profile.
+- A challenging but rewarding profile for those who enjoy modern, bright espresso.
 
 #### Flavor Profile
-**Variety Character**: Atypical for espresso—expect bright acidity and clean, floral notes.
+**Variety Character**: A non-traditional espresso with high acidity and a tea-like body.
 
-**Tastes Like**: Lemon candy, Earl Grey tea, peach.
+**Tastes Like**: Hot lemonade, citrus zest, floral finish.
 
 #### Brew Guide (Espresso Machine)
-- Dose: 17g
-- Ratio: 1:2.5 (for a ~42g yield; a longer ratio helps balance the acidity.)
-- Temp: 94°C (Higher temp needed for this light roast to extract properly.)
-- Grind: Slightly coarser than a traditional espresso grind
+- Dose: 18g
+- Ratio: 1:2.5 (yield ~45g)
+- Temp: 95°C (light roast needs help with extraction)
+- Grind: Fine espresso grind
+
+### Pick 2: [Monogram Warmth Blend *Espresso*](https://revolvercoffee.ca/products/monogram-warmth-blend-espresso)
+
+#### Coffee Profile
+- Roaster: Revolver
+- Origin: Central + South America
+- Variety: Blend
+- Process: Washed
+- Roast: Medium
+- Roast Date: Recent
+- Price: $22/300g
+
+#### Why Get This
+① [Seasonality/Status]
+- A reliable and forgiving classic espresso blend.
+
+② [Rarity/Value]
+- Incredible value and designed to pair perfectly with milk.
+
+#### Flavor Profile
+**Variety Character**: Balanced, full-bodied, and built to be a consistent crowd-pleaser.
+
+**Tastes Like**: Dark chocolate, toffee, walnut.
+
+#### Brew Guide (Espresso Machine)
+- Dose: 18g
+- Ratio: 1:2 (yield ~36g)
+- Temp: 93°C (classic temp for balance)
+- Grind: Standard espresso grind
 
 ---
 
 ## How to Choose
 
-If you're into bright, acidic pour overs that taste like juice, grab the Rogue Wave Ethiopia. For a reliable, comforting daily brew, the Revolver blend is your workhorse. On espresso, the Colombian pulls a clean, sweet shot that's great on its own or in a small milk drink. The Ethiopia is a challenge to dial in but rewards you with a floral, tea-like shot for straight espresso drinkers.
+If you’re chasing a complex, tea-like pour over, the Geisha is a must-try. For a reliable, chocolatey daily cup, the Ethica Brazil is your workhorse. On espresso, the Geisha pulls a bright, acidic, and wild shot best served black, while the Warmth Blend is the perfect, rich foundation for your daily latte.
