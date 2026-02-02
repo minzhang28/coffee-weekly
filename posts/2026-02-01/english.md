@@ -1,131 +1,131 @@
 # This Week's Coffee Picks
 
-This week's theme is convenience meets classics. We're featuring a high-quality instant coffee for when you're on the go, a reliable daily driver for your morning ritual, and a decaf that doesn't compromise on flavor for those late-night cravings.
+This week's theme is 'Peak Season'. We're featuring two distinct pour overs—a classic and a bright—and two exceptional espressos. One from South America and one from Africa. Here's what's tasting great right now, fresh off the harvest.
 
 ---
 
 ## Pour Over Recommendations
 
-### Pick 1: [Specialty Instant Coffee (4 sachets) - Ethiopia](https://palletcoffeeroasters.com/products/specialty-instant-coffee-6-sachets)
+### Pick 1: [Ethiopia - Chelbesa One Station | Washed](https://roguewavecoffee.ca/products/ethiopia-chelbesa-one-station-washed)
 
 #### Coffee Profile
-- Roaster: Pallet
-- Origin: Ethiopia Guji
-- Variety: N/A
-- Process: N/A
-- Roast: Medium (Assumed)
+- Roaster: Rogue Wave
+- Origin: Ethiopia Gedeb Zone, Yirgacheffe
+- Variety: Ethiopian Heirloom (Korume, Wolisho)
+- Process: Washed (with a 2-3 day dry ferment)
+- Roast: Light/Medium
 - Roast Date: Recent
-- Price: $16
+- Price: $26
 
 #### Why Get This
 ① [Seasonality/Status]
-- Peak season for Guji coffees, which arrive early in the year, ensuring fresh crop character.
+- Prime Ethiopian harvest season. This is a fresh arrival, so the flavors are vibrant.
 
 ② [Rarity/Value]
-- A high-fidelity instant coffee. Excellent for travel or the office when brewing gear isn't an option.
+- Coffees from the Chelbesa station are consistently high quality. This washed lot is super clean and bright, offering great value.
 
 #### Flavor Profile
-**Variety Character**: Classic bright, floral, and fruity notes from the Guji region.
+**Variety Character**: Classic washed Yirgacheffe profile known for clean florals and citrus acidity.
 
-**Tastes Like**: Ripe cherry, fruit notes.
+**Tastes Like**: Lemon, jasmine, black tea, raspberry.
 
-#### Brew Guide (Instant)
-- Ratio: N/A (Instant)
-- Temp: 85-90°C / 185-194°F (to preserve delicate flavors).
-- Grind: Not required.
+#### Brew Guide (V60/Pour Over)
+- Ratio: 1:16
+- Temp: 95°C (Light roast, needs the extra heat to properly extract the delicate floral and fruit notes.)
+- Grind: Medium-fine (like table salt)
 
-### Pick 2: [Ex Animo Superbus BULK 1KG *Espresso*](https://revolvercoffee.ca/products/ex-animo-superbus-bulk-1kg-espresso)
+### Pick 2: [Ex Animo Hooked Blend](https://revolvercoffee.ca/products/ex-animo-hooked-espresso)
 
 #### Coffee Profile
 - Roaster: Revolver
-- Origin: Central America + Africa Blend
+- Origin: South America/East Africa
 - Variety: Blend
 - Process: Blend
 - Roast: Medium
 - Roast Date: Recent
-- Price: $59 (1KG)
+- Price: $23.50 (340g)
 
 #### Why Get This
 ① [Seasonality/Status]
-- The Central American component of the blend is at peak freshness, contributing sweetness and balance.
+- South American components are at peak freshness for the season.
 
 ② [Rarity/Value]
-- The 1KG bag offers great value for a consistent daily-drinker.
+- A 340g bag makes this a solid choice for a daily driver. Consistent and classic profile.
 
 #### Flavor Profile
-**Variety Character**: A balanced and stable blend profile, suitable for multiple brew methods.
+**Variety Character**: A balanced and sweet blend, quintessential comfort coffee.
 
-**Tastes Like**: Clean, Sweet, Crisp.
+**Tastes Like**: Dark chocolate, caramel, vanilla.
 
 #### Brew Guide (V60/Pour Over)
-- Ratio: 1:16
-- Temp: 94°C / 201°F (brings out sweetness in this medium roast).
-- Grind: Medium, similar to granulated sugar.
+- Ratio: 1:15
+- Temp: 92°C (Medium roast; lower temp avoids bitterness and brings out sweetness.)
+- Grind: Medium
 
 ---
 
 ## Espresso Recommendations
 
-### Pick 1: [DECAF Brazil Fazenda Um](/shop/decaf-guatemala-carrizal)
+### Pick 1: [Luna Colombia Antonio Gualguan Washed Espresso](https://revolvercoffee.ca/products/luna-colombia-antonio-gualguan-washed-espresso)
 
 #### Coffee Profile
-- Roaster: Prototype
-- Origin: Brazil Fazenda Um
-- Variety: N/A
-- Process: N/A
-- Roast: Espresso Roast
+- Roaster: Revolver
+- Origin: Colombia Nariño
+- Variety: Caturra
+- Process: Washed
+- Roast: Medium
 - Roast Date: Recent
-- Price: $27
+- Price: $28.50 (250g)
 
 #### Why Get This
 ① [Seasonality/Status]
-- Current crop, avoiding the woody or stale notes sometimes found in older decafs.
+- Freshly landed lot from the recent Colombian harvest.
 
 ② [Rarity/Value]
-- A solid decaf option that works well black or with milk, perfect for evening enjoyment.
+- Excellent single origin espresso that showcases the Nariño terroir.
 
 #### Flavor Profile
-**Variety Character**: Classic Brazilian profile with prominent nut and chocolate notes.
+**Variety Character**: High-altitude Caturra delivers bright acidity and a sweet body.
 
-**Tastes Like**: Milk Chocolate, Caramel, Cashew.
+**Tastes Like**: Satsuma orange, yellow plum, brown butter, chocolate.
 
 #### Brew Guide (Espresso Machine)
 - Dose: 18g
-- Ratio: 1:2 (yields 36g)
-- Temp: 93°C / 199°F (prevents bitterness, focuses on sweetness).
-- Grind: Fine.
+- Ratio: 1:2.2 (for a ~40g yield)
+- Temp: 93°C (Standard temp for a medium roast.)
+- Grind: Standard fine espresso grind
 
-### Pick 2: [Specialty Instant Coffee (4 sachets) - Ethiopia](https://palletcoffeeroasters.com/products/specialty-instant-coffee-6-sachets)
+### Pick 2: [Ethiopia - Chelbesa One Station | Washed](https://roguewavecoffee.ca/products/ethiopia-chelbesa-one-station-washed)
 
 #### Coffee Profile
-- Roaster: Pallet
-- Origin: Ethiopia Guji
-- Variety: N/A
-- Process: N/A
-- Roast: Medium (Assumed)
+- Roaster: Rogue Wave
+- Origin: Ethiopia Gedeb Zone, Yirgacheffe
+- Variety: Ethiopian Heirloom (Korume, Wolisho)
+- Process: Washed
+- Roast: Light/Medium
 - Roast Date: Recent
-- Price: $16
+- Price: $26
 
 #### Why Get This
 ① [Seasonality/Status]
-- Fresh crop character retains the floral and fruit notes expected from a good Ethiopian coffee.
+- Peak season lot, super fresh.
 
 ② [Rarity/Value]
-- Provides a fast way to make an espresso-like concentrate for iced drinks or quick milk-based coffees.
+- Pulls as a bright, modern SOE. A great way to experience a non-traditional espresso profile.
 
 #### Flavor Profile
-**Variety Character**: Bright acidity and floral notes typical of the Guji region.
+**Variety Character**: Atypical for espresso—expect bright acidity and clean, floral notes.
 
-**Tastes Like**: Ripe cherry, fruit notes.
+**Tastes Like**: Lemon candy, Earl Grey tea, peach.
 
-#### Brew Guide (Quick Shot)
-- Dose: 1 sachet
-- Ratio: Mix with ~40-50ml of hot water to create a strong concentrate.
-- Use: Perfect base for a quick iced latte or flat white. Not for a traditional espresso machine.
-- Grind: Not required.
+#### Brew Guide (Espresso Machine)
+- Dose: 17g
+- Ratio: 1:2.5 (for a ~42g yield; a longer ratio helps balance the acidity.)
+- Temp: 94°C (Higher temp needed for this light roast to extract properly.)
+- Grind: Slightly coarser than a traditional espresso grind
 
 ---
 
 ## How to Choose
 
-For quality coffee without the gear, grab the Pallet instant—it's perfect for the office or travel. If you want a reliable and clean daily pour-over, the Revolver blend is a workhorse with great value. For an evening espresso or a rich, nutty latte without the caffeine, Prototype's decaf is the clear choice.
+If you're into bright, acidic pour overs that taste like juice, grab the Rogue Wave Ethiopia. For a reliable, comforting daily brew, the Revolver blend is your workhorse. On espresso, the Colombian pulls a clean, sweet shot that's great on its own or in a small milk drink. The Ethiopia is a challenge to dial in but rewards you with a floral, tea-like shot for straight espresso drinkers.
