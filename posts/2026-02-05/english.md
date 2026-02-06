@@ -1,9 +1,9 @@
 # This Week's Coffee Picks
 
-This week's lineup features peak-season excellence from two powerhouse origins. We're showcasing a high-value regional lot from Colombia, representing the best of traditional profiles, alongside a rare, experimentally processed coffee from Panama. It’s a study in contrast: the champion of the classic versus the pioneer of the new.
+This week is all about the conversation between processing and place. We're exploring how methods like anaerobic fermentation can either amplify or redefine a coffee's inherent terroir. From a rule-breaking decaf to a classic blend, this lineup shows how a producer's technique shapes the final cup.
 
 ---
 
 ## Pour Over Recommendations
 
-### Pick 1: [Colombia - Pompeya Cabildo Inga | Regional Lot Washed](https://roguewavecoffee.ca/products/colombia-pompeya-cabildo-inga-regional-lot-washed)
+### Pick 1: [Colombia - Granja Paraiso 92 | Anaerobic Natural EA DECAF Red Bourbon](https://roguewavecoffee.ca/products/colombia-granja-paraiso-92-anaerobic-ea-decaf-red-bourbon)
