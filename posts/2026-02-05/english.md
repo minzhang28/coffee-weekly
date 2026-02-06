@@ -1,9 +1,9 @@
 # This Week's Coffee Picks
 
-This week, we're embarking on a journey through coffee excellence. We’ll explore the pinnacle of coffee with a rare, legendary Gesha, and contrast it with approachable, classic regional staples. From complex, fruit-forward notes to comforting, chocolatey profiles, there’s an exceptional coffee here for every palate.
+This week's theme is a journey through coffee processing. How a coffee cherry is processed after picking is one of the most critical steps in defining its final taste. We’re exploring the spectrum: from the clean, terroir-driven character of washed coffees to the bold, fruit-forward notes of naturals.
 
 ---
 
 ## Pour Over Recommendations
 
-### Pick 1: [Colombia - Las Margaritas Geisha | Natural 100g](https://roguewavecoffee.ca/products/colombia-las-margaritas-geisha-natural-100g)
+### Pick 1: [Colombia - Gildardo Perdomo Rodriguez - Washed](https://palletcoffeeroasters.com/products/colombia-gildardo-perdomo-rodriguez-washed)
