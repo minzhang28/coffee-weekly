@@ -288,20 +288,12 @@ function generateHTML(data, language, date, allDates) {
   // Update theme
   $('h1').next('p').text(data.theme || '');
 
-  // Add selection story/context
+  // Update selection story in the inner-card-section
   const selectionStory = language === 'chinese'
     ? '每一周我们都会从温哥华各大烘焙商处收集新鲜咖啡豆数据，根据烘焙方式，烘焙时间，产区，豆种以及处理方式和季节，帮你精选出最值得入手的手冲和意式个两款精品咖啡豆，希望能帮助你选择你喜欢的口味。'
-    : 'Every week, we gather fresh coffee data from roasters across Vancouver. Based on roast style and date, origin, varietal, processing method, and seasonality, we select four standout specialty coffees—two for pour-over and two for espresso. The goal is simple: to help you find flavors you’ll genuinely enjoy.';
+    : 'Every week, we gather fresh coffee data from roasters across Vancouver. Based on roast style and date, origin, varietal, processing method, and seasonality, we select four standout specialty coffees—two for pour-over and two for espresso. The goal is simple: to help you find flavors you\'ll genuinely enjoy.';
 
-  const storyHtml = `
-    <div style="max-width: 800px; margin: 2rem auto; padding: 1.5rem; background: linear-gradient(135deg, rgba(139, 92, 71, 0.05), rgba(139, 92, 71, 0.1)); border-radius: 1rem; border-left: 4px solid #8b5c47;">
-      <p style="margin: 0; color: #4a5568; line-height: 1.8; font-size: 0.95rem;">
-        ${selectionStory}
-      </p>
-    </div>
-  `;
-
-  $('h1').next('p').after(storyHtml);
+  $('.inner-card-section p').first().text(selectionStory);
 
   // Clear existing cards in Pour Over section (section index 1)
   $('section').eq(1).find('.grid.grid-cols-1.xl\\:grid-cols-2.gap-12').empty();
@@ -460,16 +452,12 @@ function generateHTML(data, language, date, allDates) {
     $('section').eq(2).remove();
   }
 
-  // Replace comparison table section with narrative "How to Choose"
+  // Update "How to Choose" section with content from markdown
   const quickGuideSection = $('section').last();  // Last section (after pour over and espresso)
   if (data.howToChoose) {
     quickGuideSection.find('h3').text(language === 'chinese' ? '怎么选' : 'How to Choose');
-    quickGuideSection.find('p').first().remove();  // Remove "At-a-glance summary" text
-    quickGuideSection.find('.overflow-x-auto').replaceWith(`
-      <div class="inner-card-section p-8 rounded-3xl">
-        <p class="text-base text-slate-700 leading-relaxed">${data.howToChoose}</p>
-      </div>
-    `);
+    // Replace the placeholder text in the inner-card-section
+    quickGuideSection.find('.inner-card-section p').text(data.howToChoose.trim());
   }
 
   return $.html();
