@@ -264,8 +264,13 @@ function generateHTML(data, language, date, allDates) {
           ${nextDate ? `<a href="../${nextDate}/${language}.html" style="padding: 0.5rem 1rem; background: #F0F2F5; border-radius: 0.5rem; box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff; color: #4A3728; text-decoration: none; font-weight: 600; font-size: 0.875rem;">${language === 'chinese' ? '下期' : 'Next'} →</a>` : ''}
         </div>
         <div style="display: flex; gap: 1rem; align-items: center;">
-          <a href="../../archive.html" style="color: #666; text-decoration: none; font-size: 0.875rem; font-weight: 600;">${language === 'chinese' ? '归档' : 'Archive'}</a>
-          <a href="${otherLanguage}.html" style="padding: 0.5rem 1.5rem; background: #ec6d13; border-radius: 0.5rem; color: white; text-decoration: none; font-weight: 700; font-size: 0.875rem; box-shadow: 4px 4px 8px rgba(236, 109, 19, 0.3);">${otherLanguageLabel}</a>
+          <label class="flex items-center gap-4 cursor-pointer" style="display: flex; align-items: center; gap: 1rem; cursor: pointer;">
+            <span class="lang-label lang-en text-[11px] font-black tracking-widest text-primary embossed-text" style="font-size: 0.6875rem; font-weight: 900; letter-spacing: 0.1em; color: #4A3728; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7); ${language === 'english' ? 'opacity: 1;' : 'opacity: 0.3; color: #94a3b8;'} transition: all 0.3s ease;">EN</span>
+            <a href="${otherLanguage}.html" class="toggle-track" style="background: #F0F2F5; box-shadow: inset 4px 4px 8px rgba(174, 174, 192, 0.4), inset -4px -4px 8px #ffffff; border-radius: 2rem; padding: 4px; width: 80px; height: 38px; display: flex; align-items: center; position: relative; cursor: pointer; text-decoration: none;">
+              <div class="toggle-thumb" style="width: 32px; height: 30px; background: #ec6d13; border-radius: 1rem; box-shadow: 4px 4px 10px rgba(236, 109, 19, 0.4), -2px -2px 6px rgba(255, 255, 255, 0.6), inset 2px 2px 4px rgba(255, 255, 255, 0.4), inset -2px -2px 4px rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.3); position: absolute; ${language === 'english' ? 'left: 4px;' : 'left: 42px;'} transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);"></div>
+            </a>
+            <span class="lang-label lang-ch text-[11px] font-black tracking-widest text-primary embossed-text" style="font-size: 0.6875rem; font-weight: 900; letter-spacing: 0.1em; color: #4A3728; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7); ${language === 'chinese' ? 'opacity: 1;' : 'opacity: 0.3; color: #94a3b8;'} transition: all 0.3s ease;">CH</span>
+          </label>
         </div>
       </div>
     </div>
@@ -366,8 +371,10 @@ function generateHTML(data, language, date, allDates) {
               <span class="material-symbols-outlined text-accent text-lg">science</span>
               <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">${language === 'chinese' ? '冲煮参考' : 'Brew Guide'}: <span class="text-slate-400 font-medium">${pick.brewRatio} | ${pick.brewTemp} | ${pick.brewGrind}</span></p>
             </div>
-            <a href="${pick.url}" target="_blank" class="soft-ui-button w-full py-4 rounded-2xl text-xs font-black uppercase tracking-[0.2em] text-accent hover:text-white hover:bg-accent transition-all block text-center">
-              ${language === 'chinese' ? '查看详情' : 'View Full Profile'}
+            <a href="${pick.url}" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
+              <div class="tactile-button-pill">
+                <span class="text-xs font-black uppercase tracking-[0.2em] embossed-text">${language === 'chinese' ? '买它' : 'GET IT'}</span>
+              </div>
             </a>
           </div>
         </div>
@@ -432,11 +439,13 @@ function generateHTML(data, language, date, allDates) {
           </div>
           <div class="mt-auto">
             <div class="flex items-center gap-2 mb-4">
-              <span class="material-symbols-outlined text-accent text-lg">electric_bolt</span>
+              <span class="material-symbols-outlined text-accent text-lg">science</span>
               <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">${language === 'chinese' ? '冲煮参考' : 'Brew Guide'}: <span class="text-slate-400 font-medium">${pick.brewRatio} | ${pick.brewTemp} | ${pick.brewGrind}</span></p>
             </div>
-            <a href="${pick.url}" target="_blank" class="soft-ui-button w-full py-4 rounded-2xl text-xs font-black uppercase tracking-[0.2em] text-accent hover:text-white hover:bg-accent transition-all block text-center">
-              ${language === 'chinese' ? '查看详情' : 'View Full Profile'}
+            <a href="${pick.url}" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
+              <div class="tactile-button-pill">
+                <span class="text-xs font-black uppercase tracking-[0.2em] embossed-text">${language === 'chinese' ? '买它' : 'GET IT'}</span>
+              </div>
             </a>
           </div>
         </div>
