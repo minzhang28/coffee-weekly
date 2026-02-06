@@ -1,9 +1,9 @@
 # This Week's Coffee Picks
 
-This week's theme is a journey through coffee processing. How a coffee cherry is processed after picking is one of the most critical steps in defining its final taste. We’re exploring the spectrum: from the clean, terroir-driven character of washed coffees to the bold, fruit-forward notes of naturals.
+This week's lineup features peak-season excellence from two powerhouse origins. We're showcasing a high-value regional lot from Colombia, representing the best of traditional profiles, alongside a rare, experimentally processed coffee from Panama. It’s a study in contrast: the champion of the classic versus the pioneer of the new.
 
 ---
 
 ## Pour Over Recommendations
 
-### Pick 1: [Colombia - Gildardo Perdomo Rodriguez - Washed](https://palletcoffeeroasters.com/products/colombia-gildardo-perdomo-rodriguez-washed)
+### Pick 1: [Colombia - Pompeya Cabildo Inga | Regional Lot Washed](https://roguewavecoffee.ca/products/colombia-pompeya-cabildo-inga-regional-lot-washed)
