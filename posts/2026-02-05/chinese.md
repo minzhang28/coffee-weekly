@@ -1,9 +1,9 @@
 # 本周推荐
 
-想没想过为什么有的咖啡喝起来像果汁，有的却像巧克力？秘密就在于“处理法”。这周我们不聊产地，聊聊咖啡豆从果实到生豆的这段旅程。从干净纯粹的水洗，到奔放热情的日晒，不同的处理法，决定了你杯中咖啡的性格。
+本周主题：“哥伦比亚冠军与巴拿马瑰宝”。我们聚焦两支来自哥伦比亚的新产季豆，以及一支来自巴拿马 Chiriquí 产区的稀有批次。从手冲到意式，体验冠军制作人的干净风味和前沿处理法的奔放香气。
 
 ---
 
 ## 手冲豆推荐
 
-### 推荐 1: [哥伦比亚 - Gildardo Perdomo Rodriguez - 水洗](https://palletcoffeeroasters.com/products/colombia-gildardo-perdomo-rodriguez-washed)
+### 推荐 1: [Colombia - Pompeya Cabildo Inga | Regional Lot Washed](https://roguewavecoffee.ca/products/colombia-pompeya-cabildo-inga-regional-lot-washed)
