@@ -1,9 +1,9 @@
 # 本周推荐
 
-本周的选豆是一次完整的风味之旅，从稀有且屡获殊荣的瑰夏，到稳定经典的产区代表。我们精选了四款豆子，无论你是追求极致风味的探索者，还是寻找日常口粮的爱好者，都能找到属于你的那杯。
+想没想过为什么有的咖啡喝起来像果汁，有的却像巧克力？秘密就在于“处理法”。这周我们不聊产地，聊聊咖啡豆从果实到生豆的这段旅程。从干净纯粹的水洗，到奔放热情的日晒，不同的处理法，决定了你杯中咖啡的性格。
 
 ---
 
 ## 手冲豆推荐
 
-### 推荐 1: [哥伦比亚 Las Margaritas 庄园瑰夏 日晒 100g](https://roguewavecoffee.ca/products/colombia-las-margaritas-geisha-natural-100g)
+### 推荐 1: [哥伦比亚 - Gildardo Perdomo Rodriguez - 水洗](https://palletcoffeeroasters.com/products/colombia-gildardo-perdomo-rodriguez-washed)
