@@ -289,20 +289,33 @@ function generateHTML(data, language, date, allDates) {
 
   // Update title
   $('title').text(data.title || 'Weekly Coffee Report');
-  $('h1').html(`${language === 'chinese' ? '本周' : "This Week's"} <span class="text-accent italic">${language === 'chinese' ? '咖啡推荐' : 'Coffee Picks'}</span>`);
 
-  // Update "Weekly Coffee Report" badge to date
-  $('.glass-tag').text(date || new Date().toISOString().split('T')[0]);
+  // Format date badge (e.g., "2026 Feb 07")
+  const [year, month, day] = date.split('-');
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const formattedDate = `${year} ${monthNames[parseInt(month) - 1]} ${day}`;
 
-  // Update theme
-  $('h1').next('p').text(data.theme || '');
+  // Replace placeholders in hero section
+  let heroHTML = $('section').eq(0).html();
 
-  // Update selection story in the inner-card-section
   const selectionStory = language === 'chinese'
     ? '每一周我们都会从温哥华各大烘焙商处收集新鲜咖啡豆数据，根据烘焙方式，烘焙时间，产区，豆种以及处理方式和季节，帮你精选出最值得入手的手冲和意式个两款精品咖啡豆，希望能帮助你选择你喜欢的口味。'
     : 'Every week, we gather fresh coffee data from roasters across Vancouver. Based on roast style and date, origin, varietal, processing method, and seasonality, we select four standout specialty coffees—two for pour-over and two for espresso. The goal is simple: to help you find flavors you\'ll genuinely enjoy.';
 
-  $('.inner-card-section p').first().text(selectionStory);
+  const currentFocusLabel = language === 'chinese' ? '本周主题' : 'Theme of the week';
+  const themeIntro = language === 'chinese' ? '' : '';
+
+  // Use full theme text without truncation
+  const themeText = data.theme || (language === 'chinese' ? '精选时令咖啡' : 'Peak Season Performers');
+
+  heroHTML = heroHTML
+    .replace('{{ date_badge }}', formattedDate)
+    .replace('{{ selection_story }}', selectionStory)
+    .replace('{{ current_focus_label }}', currentFocusLabel)
+    .replace('{{ theme_intro }}', themeIntro)
+    .replace('{{ theme_text }}', themeText);
+
+  $('section').eq(0).html(heroHTML);
 
   // Clear existing cards in Pour Over section (section index 1)
   $('section').eq(1).find('.grid.grid-cols-1.xl\\:grid-cols-2.gap-12').empty();
@@ -367,7 +380,7 @@ function generateHTML(data, language, date, allDates) {
           <div class="mt-auto">
             <div class="flex items-center gap-2 mb-4">
               <span class="material-symbols-outlined text-accent text-lg">science</span>
-              <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">${language === 'chinese' ? '冲煮参考' : 'Brew Guide'}: <span class="text-slate-400 font-medium">${pick.brewRatio} | ${pick.brewTemp} | ${pick.brewGrind}</span></p>
+              <p class="text-xs font-bold text-slate-500 tracking-widest"><span class="uppercase">${language === 'chinese' ? '冲煮参考' : 'brew guide'}</span>: <span class="text-slate-400 font-medium lowercase">${pick.brewRatio} | ${pick.brewTemp} | ${pick.brewGrind}</span></p>
             </div>
             <a href="${pick.url}" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
               <div class="tactile-button-pill">
@@ -435,7 +448,7 @@ function generateHTML(data, language, date, allDates) {
           <div class="mt-auto">
             <div class="flex items-center gap-2 mb-4">
               <span class="material-symbols-outlined text-accent text-lg">science</span>
-              <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">${language === 'chinese' ? '冲煮参考' : 'Brew Guide'}: <span class="text-slate-400 font-medium">${pick.brewRatio} | ${pick.brewTemp} | ${pick.brewGrind}</span></p>
+              <p class="text-xs font-bold text-slate-500 tracking-widest"><span class="uppercase">${language === 'chinese' ? '冲煮参考' : 'brew guide'}</span>: <span class="text-slate-400 font-medium lowercase">${pick.brewRatio} | ${pick.brewTemp} | ${pick.brewGrind}</span></p>
             </div>
             <a href="${pick.url}" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
               <div class="tactile-button-pill">
