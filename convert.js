@@ -133,14 +133,23 @@ function parseMarkdown(content) {
       };
       currentSection = null;
 
-      // Check next line for image URL
-      if (i + 1 < lines.length) {
-        const nextLine = lines[i + 1].trim();
+      // Check next line(s) for image URL (skip blank lines)
+      let lookAhead = 1;
+      while (i + lookAhead < lines.length && lookAhead <= 3) {
+        const nextLine = lines[i + lookAhead].trim();
+        if (!nextLine) {
+          // Skip blank lines
+          lookAhead++;
+          continue;
+        }
         const imageMatch = nextLine.match(/^!\[.*?\]\((.+?)\)/);
         if (imageMatch) {
           currentPick.imageUrl = imageMatch[1];
-          i++; // Skip the image line
+          i += lookAhead; // Skip ahead to the image line
+          break;
         }
+        // If we hit a non-image, non-blank line, stop looking
+        break;
       }
 
       continue;
@@ -340,12 +349,9 @@ function generateHTML(data, language, date, allDates) {
           </div>
         </div>
         <div class="lg:w-2/3 flex flex-col">
-          <div class="flex justify-between items-start mb-6">
-            <div>
-              <h3 class="text-2xl font-extrabold text-primary leading-tight"><a href="${pick.url}" target="_blank" class="hover:text-accent transition-colors">${pick.name}</a></h3>
-              <p class="text-sm font-medium text-slate-400 italic">${language === 'chinese' ? '手冲咖啡' : 'Pour Over Method'}</p>
-            </div>
-            <span class="text-2xl font-black text-primary">${pick.price}</span>
+          <div class="mb-6">
+            <h3 class="text-2xl font-extrabold text-primary leading-tight"><a href="${pick.url}" target="_blank" class="hover:text-accent transition-colors">${pick.name}</a></h3>
+            <p class="text-sm font-medium text-slate-400 italic">${pick.price}</p>
           </div>
           <div class="inner-card-section p-6 rounded-3xl mb-4">
             <p class="text-[10px] font-black uppercase tracking-widest text-accent mb-3">${language === 'chinese' ? '入手理由' : 'WHY GET THIS'}</p>
@@ -411,12 +417,9 @@ function generateHTML(data, language, date, allDates) {
           </div>
         </div>
         <div class="lg:w-2/3 flex flex-col">
-          <div class="flex justify-between items-start mb-6">
-            <div>
-              <h3 class="text-2xl font-extrabold text-primary leading-tight"><a href="${pick.url}" target="_blank" class="hover:text-accent transition-colors">${pick.name}</a></h3>
-              <p class="text-sm font-medium text-slate-400 italic">${language === 'chinese' ? '意式咖啡' : 'Espresso Method'}</p>
-            </div>
-            <span class="text-2xl font-black text-primary">${pick.price}</span>
+          <div class="mb-6">
+            <h3 class="text-2xl font-extrabold text-primary leading-tight"><a href="${pick.url}" target="_blank" class="hover:text-accent transition-colors">${pick.name}</a></h3>
+            <p class="text-sm font-medium text-slate-400 italic">${pick.price}</p>
           </div>
           <div class="inner-card-section p-6 rounded-3xl mb-4">
             <p class="text-[10px] font-black uppercase tracking-widest text-accent mb-3">${language === 'chinese' ? '入手理由' : 'WHY GET THIS'}</p>
