@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>本周推荐</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Noto+Serif+SC:wght@600;700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&amp;family=Noto+Serif+SC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
@@ -15,8 +15,8 @@
                         "soft-bg": "#F0F2F5",
                     },
                     fontFamily: {
-                        "sans": ["Plus Jakarta Sans", "sans-serif"],
-                        "serif": ["Noto Serif SC", "Source Han Serif SC", "Source Han Serif", "serif"]
+                        "sans": ["DM Sans", "sans-serif"],
+                        "serif": ["Noto Serif SC", "Source Han Serif SC", "Source Han Serif", "Georgia", "serif"]
                     },
                 },
             },
@@ -91,9 +91,9 @@
             transform: translateY(1px);
         }
         .glass-tag {
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.7);
+            background: #F0F2F5;
+            box-shadow: 6px 6px 12px #d1d9e6, -6px -6px 12px #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
         .soft-icon-container {
             background: #F0F2F5;
@@ -103,9 +103,36 @@
             background: #F0F2F5;
             box-shadow: 4px 4px 8px #e2e8f0, -4px -4px 8px #ffffff;
         }
+        .intro-sub-card {
+            background: #F0F2F5;
+            box-shadow: inset 4px 4px 8px #e2e8f0, inset -4px -4px 8px #ffffff;
+        }
         body {
             background: radial-gradient(circle at top left, #F8FAFC 0%, #F0F2F5 100%);
             min-height: 100vh;
+            font-family: 'DM Sans', sans-serif;
+        }
+        /* Headings: Serif with increased letter-spacing for editorial feel */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Georgia', serif;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+        }
+        h1 {
+            font-weight: 500;
+            letter-spacing: 0.04em;
+        }
+        h2 {
+            font-weight: 400;
+            letter-spacing: 0.035em;
+        }
+        h3 {
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        /* Body text: Clean geometric sans-serif */
+        p, li, span, div {
+            font-family: 'DM Sans', sans-serif;
         }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
@@ -154,6 +181,111 @@
         .embossed-text {
             text-shadow: 0px 1px 1px var(--letter-press-shadow);
         }
+
+        /* === STAGGERED CARD ANIMATIONS === */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply to coffee cards */
+        .grid > .soft-ui-raised {
+            animation: fadeInUp 0.8s ease-out backwards;
+        }
+
+        /* Stagger delays for cards */
+        .grid > .soft-ui-raised:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        .grid > .soft-ui-raised:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .grid > .soft-ui-raised:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        .grid > .soft-ui-raised:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        /* Enhanced hover states - lift + subtle rotate */
+        .grid > .soft-ui-raised {
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                        box-shadow 0.4s ease;
+        }
+
+        .grid > .soft-ui-raised:hover {
+            transform: translateY(-8px) rotate(0.5deg);
+            box-shadow: 16px 16px 32px #c8d0dc, -16px -16px 32px #ffffff;
+        }
+
+        /* Product image scale on card hover */
+        .soft-ui-raised img {
+            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .soft-ui-raised:hover img {
+            transform: scale(1.05);
+        }
+
+        /* === HERO SECTION STAGGERED ANIMATIONS === */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .glass-tag {
+            animation: fadeIn 0.6s ease-out 0.1s backwards;
+        }
+
+        h1 {
+            animation: fadeIn 0.8s ease-out 0.3s backwards;
+        }
+
+        .intro-sub-card {
+            animation: fadeIn 0.8s ease-out 0.5s backwards;
+        }
+
+        .space-y-4 {
+            animation: fadeIn 0.8s ease-out 0.7s backwards;
+        }
+
+        /* === ENHANCED BUTTON PRESS EFFECT === */
+        .tactile-button-pill {
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .tactile-button-track:hover .tactile-button-pill {
+            transform: translateY(-2px);
+            box-shadow:
+                8px 8px 16px var(--neumorphic-shadow-refined),
+                -6px -6px 14px var(--neumorphic-light-refined),
+                inset 1px 1px 2px var(--inner-glow-bright);
+        }
+
+        .tactile-button-track:active .tactile-button-pill {
+            transform: translateY(1px);
+        }
+
+        /* === BREW GUIDE ICON ANIMATION === */
+        .material-symbols-outlined {
+            transition: transform 0.3s ease;
+        }
+
+        .soft-ui-raised:hover .material-symbols-outlined {
+            transform: rotate(15deg) scale(1.1);
+        }
     </style>
 </head>
 <body class="text-[#2D3436] font-sans selection:bg-accent/20">
@@ -179,11 +311,27 @@
 
 <main class="flex-1">
 <section class="max-w-[1400px] mx-auto px-6 py-10">
-<div class="relative overflow-hidden rounded-[4rem] min-h-[400px] flex flex-col items-center justify-center p-8 text-center soft-ui-raised">
-<div class="relative z-10 max-w-[850px] space-y-6">
-<span class="glass-tag px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-accent">2026-02-01</span>
-<h1 class="text-5xl md:text-6xl font-extrabold text-primary leading-[1.1] tracking-tight">本周 <span class="text-accent italic">咖啡推荐</span></h1>
-<p class="text-lg md:text-xl font-normal text-slate-500 max-w-3xl mx-auto leading-relaxed">本周主题是“风味对比”。我们选了一款稀有、明亮、充满花果香的瑰夏，也准备了一款经典、醇厚、坚果巧克力风味的日常口粮。无论手冲还是意式，总有一款适合你。</p>
+<div class="relative overflow-hidden soft-ui-raised min-h-[600px] flex flex-col items-center justify-center p-8 md:p-20 text-center">
+<div class="relative z-10 max-w-[1000px] space-y-12">
+<span class="glass-tag px-8 py-3 rounded-full text-[13px] font-bold uppercase tracking-[0.45em] text-accent border border-white/40">2026 Feb 01</span>
+<h1 class="text-5xl md:text-6xl font-extrabold text-primary leading-[1.1] tracking-tight">
+                        This Week's <span class="text-accent italic">Coffee Picks</span>
+</h1>
+<div class="max-w-3xl mx-auto space-y-10">
+<div class="intro-sub-card p-6 md:p-8 rounded-[2rem]">
+<p class="text-sm md:text-base font-light text-slate-600 leading-[1.8] text-center italic">
+                                每一周我们都会从温哥华各大烘焙商处收集新鲜咖啡豆数据，根据烘焙方式，烘焙时间，产区，豆种以及处理方式和季节，帮你精选出最值得入手的手冲和意式个两款精品咖啡豆，希望能帮助你选择你喜欢的口味。
+                            </p>
+</div>
+<div class="space-y-6">
+<span class="glass-tag px-8 py-3 rounded-full text-[13px] font-bold uppercase tracking-[0.45em] text-accent border border-white/40 inline-block">本周主题</span>
+<div class="intro-sub-card p-6 md:p-8 rounded-[2rem]">
+<p class="text-lg md:text-xl font-serif text-primary/90 leading-[1.6] text-center">
+                                本周主题是“风味对比”。我们选了一款稀有、明亮、充满花果香的瑰夏，也准备了一款经典、醇厚、坚果巧克力风味的日常口粮。无论手冲还是意式，总有一款适合你。
+</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -246,7 +394,7 @@
           <div class="mt-auto">
             <div class="flex items-center gap-2 mb-4">
               <span class="material-symbols-outlined text-accent text-lg">science</span>
-              <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">冲煮参考: <span class="text-slate-400 font-medium">1:16 | 96°C（高海拔豆密度大，需高温萃取出甜感） | 中等偏细</span></p>
+              <p class="text-xs font-bold text-slate-500 tracking-widest"><span class="uppercase">冲煮参考</span>: <span class="text-slate-400 font-medium lowercase">1:16 | 96°C（高海拔豆密度大，需高温萃取出甜感） | 中等偏细</span></p>
             </div>
             <a href="https://roguewavecoffee.ca/products/colombia-las-margaritas-geisha-washed-100g-1" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
               <div class="tactile-button-pill">
@@ -308,7 +456,7 @@
           <div class="mt-auto">
             <div class="flex items-center gap-2 mb-4">
               <span class="material-symbols-outlined text-accent text-lg">science</span>
-              <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">冲煮参考: <span class="text-slate-400 font-medium">1:16 | 93°C（中烘+日晒溶解度高，高温易带出苦味） | 中等粗细</span></p>
+              <p class="text-xs font-bold text-slate-500 tracking-widest"><span class="uppercase">冲煮参考</span>: <span class="text-slate-400 font-medium lowercase">1:16 | 93°C（中烘+日晒溶解度高，高温易带出苦味） | 中等粗细</span></p>
             </div>
             <a href="https://revolvercoffee.ca/products/ethica-standard-espresso-natural-espresso" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
               <div class="tactile-button-pill">
@@ -379,7 +527,7 @@
           <div class="mt-auto">
             <div class="flex items-center gap-2 mb-4">
               <span class="material-symbols-outlined text-accent text-lg">science</span>
-              <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">冲煮参考: <span class="text-slate-400 font-medium">1:2.5 (约45g液重) | 95°C（浅烘需要更高温度来保证萃取率） | 比常规意式更细</span></p>
+              <p class="text-xs font-bold text-slate-500 tracking-widest"><span class="uppercase">冲煮参考</span>: <span class="text-slate-400 font-medium lowercase">1:2.5 (约45g液重) | 95°C（浅烘需要更高温度来保证萃取率） | 比常规意式更细</span></p>
             </div>
             <a href="https://roguewavecoffee.ca/products/colombia-las-margaritas-geisha-washed-100g-1" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
               <div class="tactile-button-pill">
@@ -441,7 +589,7 @@
           <div class="mt-auto">
             <div class="flex items-center gap-2 mb-4">
               <span class="material-symbols-outlined text-accent text-lg">science</span>
-              <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">冲煮参考: <span class="text-slate-400 font-medium">1:2 (约36g液重) | 93°C（经典的平衡萃取温度） | 意式标准研磨度</span></p>
+              <p class="text-xs font-bold text-slate-500 tracking-widest"><span class="uppercase">冲煮参考</span>: <span class="text-slate-400 font-medium lowercase">1:2 (约36g液重) | 93°C（经典的平衡萃取温度） | 意式标准研磨度</span></p>
             </div>
             <a href="https://revolvercoffee.ca/products/monogram-warmth-blend-espresso" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
               <div class="tactile-button-pill">
@@ -459,7 +607,7 @@
 <h3 class="text-2xl font-extrabold text-primary tracking-tight">怎么选</h3>
 </div>
 <div class="inner-card-section p-8 rounded-3xl">
-<p class="text-base text-slate-700 leading-relaxed">如果你想喝一杯干净、明亮、像茶一样的手冲，瑰夏不容错过。如果想找一款稳定好冲的日常巧克力口粮豆，巴西这款很合适。意式方面，瑰夏是一支挑战性的明亮SOE，适合黑咖；Warmth拼配则是制作拿铁的坚实基础，稳定醇厚。</p>
+<p class="text-lg md:text-xl font-serif text-primary/90 leading-[1.6]">如果你想喝一杯干净、明亮、像茶一样的手冲，瑰夏不容错过。如果想找一款稳定好冲的日常巧克力口粮豆，巴西这款很合适。意式方面，瑰夏是一支挑战性的明亮SOE，适合黑咖；Warmth拼配则是制作拿铁的坚实基础，稳定醇厚。</p>
 </div>
 </div>
 </section>
