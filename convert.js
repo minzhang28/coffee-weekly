@@ -331,7 +331,7 @@ function generateHTML(data, language, date, allDates) {
   data.pourOverPicks.forEach(pick => {
     const card = `
       <div class="soft-ui-raised p-8 flex flex-col lg:flex-row gap-8 transition-all duration-500 hover:shadow-2xl">
-        <div class="lg:w-1/3 flex flex-col gap-4">
+        <div class="order-2 lg:order-1 lg:w-1/3 flex flex-col gap-4">
           <div class="relative overflow-hidden rounded-3xl aspect-[4/5] soft-ui-inset">
             <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="${pick.imageUrl || 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB'}"/>
           </div>
@@ -361,7 +361,7 @@ function generateHTML(data, language, date, allDates) {
             </div>
           </div>
         </div>
-        <div class="lg:w-2/3 flex flex-col">
+        <div class="order-1 lg:order-2 lg:w-2/3 flex flex-col">
           <div class="mb-6">
             <h3 class="text-2xl font-extrabold text-primary leading-tight"><a href="${pick.url}" target="_blank" class="hover:text-accent transition-colors">${pick.name}</a></h3>
             <p class="text-sm font-medium text-slate-400 italic">${pick.price}</p>
@@ -399,7 +399,7 @@ function generateHTML(data, language, date, allDates) {
   data.espressoPicks.forEach(pick => {
     const card = `
       <div class="soft-ui-raised p-8 flex flex-col lg:flex-row gap-8 transition-all duration-500 hover:shadow-2xl">
-        <div class="lg:w-1/3 flex flex-col gap-4">
+        <div class="order-2 lg:order-1 lg:w-1/3 flex flex-col gap-4">
           <div class="relative overflow-hidden rounded-3xl aspect-[4/5] soft-ui-inset">
             <img alt="${pick.name}" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="${pick.imageUrl || 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-X_WNV5ruDhDL7LxI0nsmnDFaGUGVUWxAIRZR3Ld8RZskmqrFXk-ZHSLOnhXXfP1_fpjnN0YBM_vfZm3wOZbUajj34uUnXdlXcz-sHn40-qxTDvHLL7u6dbO464OyBKyTZZw3FChlKJvgZfjDQbzHqpNCgpSxg_3gZfAfm9hcdQU6iEAoAOt9JY0Es4oFcLN-VUAq7KIFwt-YWyx3n8GuM9diIfPKU6z1MLpWiLcOjS5dsruR6aNnLg15ase2nnvYjBurRmeLVAgB'}"/>
           </div>
@@ -429,7 +429,7 @@ function generateHTML(data, language, date, allDates) {
             </div>
           </div>
         </div>
-        <div class="lg:w-2/3 flex flex-col">
+        <div class="order-1 lg:order-2 lg:w-2/3 flex flex-col">
           <div class="mb-6">
             <h3 class="text-2xl font-extrabold text-primary leading-tight"><a href="${pick.url}" target="_blank" class="hover:text-accent transition-colors">${pick.name}</a></h3>
             <p class="text-sm font-medium text-slate-400 italic">${pick.price}</p>
