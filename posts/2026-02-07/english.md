@@ -1,6 +1,6 @@
 # This Week's Coffee Picks
 
-This week is all about peak season coffees from Central and South America. We're seeing fresh crops land, and the flavors are incredibly vibrant. Here’s what we’re recommending for your brew bar, from elegant florals to intense, funky naturals. 
+This week is all about peak season coffees from Central and South America. We're seeing fresh crops land, and the flavors are incredibly vibrant. Here’s what we’re recommending for your brew bar, from elegant florals to intense, funky naturals.
 
 ---
 
