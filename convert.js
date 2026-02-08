@@ -83,7 +83,7 @@ function parseMarkdown(content) {
     }
 
     // Check for "How to Choose" section at the end
-    if (line.match(/^## (?:怎么选|How to Choose)/)) {
+    if (line.match(/^## (?:怎么选|挑选建议|How to Choose)/)) {
       inHowToChoose = true;
       if (currentPick) {
         if (currentBrewMethod === 'pourover') {
@@ -384,7 +384,7 @@ function generateHTML(data, language, date, allDates) {
             </div>
             <a href="${pick.url}" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
               <div class="tactile-button-pill">
-                <span class="text-xs font-black uppercase tracking-[0.2em] embossed-text">${language === 'chinese' ? '买它' : 'GET IT'}</span>
+                <span class="text-xs font-black uppercase tracking-[0.2em] embossed-text">${language === 'chinese' ? '去看看' : 'GET IT'}</span>
               </div>
             </a>
           </div>
@@ -452,7 +452,7 @@ function generateHTML(data, language, date, allDates) {
             </div>
             <a href="${pick.url}" target="_blank" class="tactile-button-track group" style="text-decoration: none; display: flex;">
               <div class="tactile-button-pill">
-                <span class="text-xs font-black uppercase tracking-[0.2em] embossed-text">${language === 'chinese' ? '买它' : 'GET IT'}</span>
+                <span class="text-xs font-black uppercase tracking-[0.2em] embossed-text">${language === 'chinese' ? '去看看' : 'GET IT'}</span>
               </div>
             </a>
           </div>
@@ -471,7 +471,7 @@ function generateHTML(data, language, date, allDates) {
   // Update "How to Choose" section with content from markdown
   const quickGuideSection = $('section').last();  // Last section (after pour over and espresso)
   if (data.howToChoose) {
-    quickGuideSection.find('h3').text(language === 'chinese' ? '怎么选' : 'How to Choose');
+    quickGuideSection.find('h3').text(language === 'chinese' ? '挑选建议' : 'How to Choose');
     // Replace the placeholder text in the inner-card-section
     quickGuideSection.find('.inner-card-section p').text(data.howToChoose.trim());
   }
