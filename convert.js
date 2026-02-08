@@ -266,7 +266,7 @@ function generateHTML(data, language, date, allDates) {
   const nextDate = currentIndex > 0 ? allDates[currentIndex - 1] : null;
 
   const navBar = `
-    <div style="position: sticky; top: 0; z-index: 1000; background: rgba(240, 242, 245, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); padding: 1rem 2rem;">
+    <div style="position: sticky; top: 0; z-index: 1000; background: rgba(240, 242, 245, 0.5); backdrop-filter: blur(40px) saturate(200%) brightness(1.1); -webkit-backdrop-filter: blur(40px) saturate(200%) brightness(1.1); border-bottom: 1px solid rgba(255,255,255,0.4); box-shadow: 0 8px 32px rgba(0,0,0,0.08); padding: 1rem 2rem;">
       <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
         <div style="display: flex; gap: 1rem;">
           ${prevDate ? `<a href="../${prevDate}/${language}.html" style="padding: 0.5rem 1rem; background: #F0F2F5; border-radius: 0.5rem; box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff; color: #4A3728; text-decoration: none; font-weight: 600; font-size: 0.875rem;">← ${language === 'chinese' ? '上期' : 'Previous'}</a>` : ''}
