@@ -1,40 +1,46 @@
 # This Week's Coffee Picks
 
-This week, we're highlighting peak-season arrivals from Central and South America. These coffees are tasting incredibly fresh right now. We've got a classic, elegant Panamanian Geisha for pour over, and a funky Brazilian anaerobic for espresso. Let's dive in.
+This week is all about peak season coffees from Central and South America. We're seeing fresh crops land, and the flavors are incredibly vibrant. Here’s what we’re recommending for your brew bar, from elegant florals to intense, funky naturals.
 
 ---
 
 ## Pour Over Recommendations
 
-### Pick 1: [Panama - Bambito Estate Geisha | Washed - 100g](https://roguewavecoffee.ca/products/panama-bambito-estate-geisha-washed-100g)
+### Pick 1: [Colombia - Gildardo Perdomo Rodriguez - Washed](https://palletcoffeeroasters.com/products/colombia-gildardo-perdomo-rodriguez-washed)
+
+![Colombia - Gildardo Perdomo Rodriguez - Washed](https://cdn.shopify.com/s/files/1/0424/9482/0510/files/300g_GILDARDO.png?v=1770244213)
+
 
 #### Coffee Profile
-- Roaster: Rogue Wave
-- Origin: Panama Bambito, Chiriqui Province
-- Variety: Gesha
+- Roaster: Pallet
+- Origin: Colombia Huila, Acevedo
+- Variety: Gesha, Pink Bourbon
 - Process: Washed
 - Roast: Light
-- Roast Date: Recent
-- Price: $55 / 100g
+- Roast Date: Feb 24, 2026
+- Price: $30 / 250g
 
 #### Why Get This
 ① [Seasonality/Status]
-- Fresh arrivals from Panama's recent harvest. This coffee is at its peak freshness and flavor complexity right now.
+- Peak season Huila crop. It's at maximum freshness and flavor clarity right now.
 
 ② [Rarity/Value]
-- A benchmark washed Geisha from the famed Bambito Estate. This is a micro-lot that represents the classic, clean profile of a top-tier Panamanian coffee.
+- A Gesha and Pink Bourbon lot at this price point offers excellent value.
 
 #### Flavor Profile
-**Variety Character**: Gesha is prized for its delicate, tea-like body and intense floral aromatics.
+**Variety Character**: Classic elegant florals from the Gesha, layered with the complexity of Pink Bourbon.
 
-**Tastes Like**: Jasmine, bergamot, and white peach.
+**Tastes Like**: Jasmine, lemonade, raspberry jam, peach, with a honey finish.
 
 #### Brew Guide (V60/Pour Over)
 - Ratio: 1:16
-- Temp: 93°C (prevents scalding the delicate florals)
+- Temp: 96°C (High-density bean, requires higher temp for proper acid extraction.)
 - Grind: Medium-fine
 
-### Pick 2: [Cerro el Tigre (Washed Pacamara), El Salvador](https://prototypecoffee.ca/shop/cerro-el-tigre-washed-pacamara-el-salvador)
+### Pick 2: [Cerro el Tigre (Washed Pacamara), El Salvador](https://www.prototypecoffee.ca/cerro-el-tigre-washed-pacamara-el-salvador)
+
+![Cerro el Tigre (Washed Pacamara), El Salvador](https://images.squarespace-cdn.com/content/v1/5ae73c0125bf0240808fc40e/5ac3b1dc-8b14-4a69-abd2-f2903b061972/IMG_7527.JPG)
+
 
 #### Coffee Profile
 - Roaster: Prototype
@@ -42,24 +48,24 @@ This week, we're highlighting peak-season arrivals from Central and South Americ
 - Variety: Pacamara
 - Process: Washed
 - Roast: Light
-- Roast Date: Recent
+- Roast Date: Feb 24, 2026
 - Price: $27 / 250g
 
 #### Why Get This
 ① [Seasonality/Status]
-- Peak season El Salvador offering. The cup profile is vibrant and fully expressed.
+- Fresh crop from El Salvador, right in the middle of its harvest season.
 
 ② [Rarity/Value]
-- A great opportunity to taste the unique Pacamara variety. Excellent value for a classic, clean, and complex Central American washed coffee.
+- Pacamara beans are uniquely large and offer a distinct savory-sweet profile you don't find often.
 
 #### Flavor Profile
-**Variety Character**: Pacamara beans are massive and known for a unique savory complexity alongside fruity sweetness.
+**Variety Character**: Pacamara is known for its complex structure and unique umami notes.
 
-**Tastes Like**: Apple juice, raisin, and a hint of hops.
+**Tastes Like**: Unfiltered apple juice, raisin, and a clean, hoppy finish.
 
 #### Brew Guide (V60/Pour Over)
-- Ratio: 1:16
-- Temp: 95°C (high-altitude beans need higher temps to unlock sweetness)
+- Ratio: 1:15
+- Temp: 94°C (Slightly lower temp helps balance the savory notes without over-extracting.)
 - Grind: Medium
 
 ---
@@ -68,64 +74,70 @@ This week, we're highlighting peak-season arrivals from Central and South Americ
 
 ### Pick 1: [DAK Pretty Nuts *Anaerobic Natural Espresso*](https://revolvercoffee.ca/products/dak-pretty-nuts-natural-espresso)
 
+![DAK Pretty Nuts *Anaerobic Natural Espresso*](https://cdn.shopify.com/s/files/1/0023/8593/6496/files/Screenshot2026-02-06at9.42.47AM.png?v=1770399772)
+
+
 #### Coffee Profile
-- Roaster: DAK (via Revolver)
+- Roaster: DAK (sold by Revolver)
 - Origin: Brazil Sul de Minas
 - Variety: Icatu
 - Process: Anaerobic Natural
-- Roast: Medium
-- Roast Date: Recent
+- Roast: Espresso
+- Roast Date: Jan 28, 2026
 - Price: $32.50 / 250g
 
 #### Why Get This
 ① [Seasonality/Status]
-- A current-crop Brazilian coffee where the anaerobic processing has pushed the flavor intensity way up.
+- A very fresh roast of a peak season Brazilian coffee.
 
 ② [Rarity/Value]
-- A wild espresso from Dutch roaster DAK. It's for the adventurous palate and pulls a very memorable shot, both as an SOE and in small milk drinks.
+- Heavy anaerobic fermentation gives it a wild, boozy flavor profile. Not for the faint of heart.
 
 #### Flavor Profile
-**Variety Character**: Icatu is a sweet, sturdy variety that provides a great canvas for heavy fermentation notes.
+**Variety Character**: Anaerobic processing pushes this Icatu variety into intense, fermented fruit territory.
 
-**Tastes Like**: Peanut butter, Grand Marnier liqueur, forest fruits.
+**Tastes Like**: Peanut butter, Grand Marnier (orange liqueur), dark forest fruits. It's funky.
 
 #### Brew Guide (Espresso Machine)
 - Dose: 18g
-- Ratio: 1:2.5
-- Temp: 92°C (lower temp controls bitterness on this medium roast)
-- Grind: Standard espresso fine
+- Ratio: 1:2.5 (Pulling it longer opens up the complex fruit notes.)
+- Temp: 92°C (Lower temp helps manage the intense fermentation and avoid harshness.)
+- Grind: Fine
 
-### Pick 2: [Costa Rica - Finca VOO Red Catuai | Natural](https://roguewavecoffee.ca/products/costa-rica-finca-voo-red-catuai-natural)
+### Pick 2: [Panama - Carmen Estate Caturra Lot 4 | Natural](https://roguewavecoffee.ca/products/panama-carmen-estate-caturra-lot-4-natural)
+
+![Panama - Carmen Estate Caturra Lot 4 | Natural](https://cdn.shopify.com/s/files/1/0042/0773/8992/files/PanamaCarmenEstateLot4natural2026340gBAG.jpg?v=1770234507)
+
 
 #### Coffee Profile
 - Roaster: Rogue Wave
-- Origin: Costa Rica Santos (Copey de Dota)
-- Variety: Catuaí
-- Process: Natural (Experimental)
+- Origin: Panama
+- Variety: Caturra
+- Process: Natural
 - Roast: Medium
-- Roast Date: Recent
-- Price: $27 / 250g
+- Roast Date: Feb 24, 2026
+- Price: $25 / 250g
 
 #### Why Get This
 ① [Seasonality/Status]
-- Fresh crop from Costa Rica. This natural process delivers a classic, fruit-forward, and sweet profile.
+- Fresh arrival from Panama's highly decorated Carmen Estate.
 
 ② [Rarity/Value]
-- From the award-winning Finca VOO, this experimental lot is a reliable and delicious daily driver espresso at a great price point.
+- Exceptional value for a coffee from a farm known for its competition lots.
 
 #### Flavor Profile
-**Variety Character**: Red Catuai is known for its deep sweetness and creamy body, making it a perfect base for espresso.
+**Variety Character**: A clean, well-executed natural Caturra that delivers sweetness without excessive funk.
 
-**Tastes Like**: Strawberry jam, dark chocolate, caramel.
+**Tastes Like**: Ripe apricot, orange peel, cane sugar. A very clean natural.
 
 #### Brew Guide (Espresso Machine)
-- Dose: 18g
-- Ratio: 1:2.3
-- Temp: 91°C (helps manage fermentation notes and keeps it clean)
-- Grind: Standard espresso fine
+- Dose: 20g
+- Ratio: 1:2
+- Temp: 93°C (A solid workhorse bean, forgiving parameters.)
+- Grind: Standard fine espresso
 
 ---
 
 ## How to Choose
 
-For a truly elegant, clean, and floral pour over, the Panama Geisha is the clear choice. If you want a washed coffee with more body and a unique savory-sweet profile, the El Salvador Pacamara is fantastic. On espresso, the DAK is a wild ride for a funky, memorable SOE shot. The Costa Rican is the workhorse—a sweet, balanced, and forgiving bean that shines in milk drinks.
+For a clean, complex, and floral pour over, the Colombia Gesha is the clear winner this week. If you're looking for something more unconventional, the savory notes of the El Salvador Pacamara are a trip. On espresso, the DAK Brazil is for anyone chasing those wild, fermented notes in a shot. For a reliable, sweet, and balanced espresso that works great on its own or in milk, the Panama from Carmen Estate is the go-to.
